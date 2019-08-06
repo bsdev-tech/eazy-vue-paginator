@@ -17,7 +17,7 @@
     </div>
 </template>
 <script>
-import Single from './Single'
+import Single from './Single.vue'
 export default{
     components:{Single},
     data(){

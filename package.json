@@ -1,17 +1,20 @@
 {
+  "private": false,
   "name": "eazy-vue-paginator",
   "description": "A Vue.js eazy to use paginator plugin. It works well for paginating a collection of data of any length.",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "main": "index.js",
   "dependencies": {
     "vue": "^2.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "build-bundle": "vue-cli-service build --target lib --name eazy-vue-paginator ./src/setup.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bsdev-tech/vue-paginator.git"
+    "url": "git+https://github.com/bsdev-tech/eazy-vue-paginator.git"
   },
   "keywords": [
     "pagination",
@@ -25,8 +28,18 @@
   "author": "Isaiah Pius <isaiahtech1@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bsdev-tech/vue-paginator/issues"
+    "url": "https://github.com/bsdev-tech/eazy-vue-paginator/issues"
   },
-  "homepage": "https://github.com/bsdev-tech/vue-paginator",
-  "devDependencies": {}
+  "homepage": "https://github.com/bsdev-tech/eazy-vue-paginator",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  }
 }
