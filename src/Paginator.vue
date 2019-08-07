@@ -68,20 +68,16 @@ export default{
     methods:{
         nextCourses(){
             if(this.stop < this.collection.length){
-                this.currentPage++;
-                //console.log('Entered Start at ' + this.start + ' and end at ' + this.stop)
+                this.currentPage++
                 this.start = this.stop;
-                //console.log('Leaving Start at ' + this.start + ' and end at ' + this.stop)
             }
         },
         prevCourses(){
             if(this.start > this.totalCoursesPerPage){
                 this.start = this.start - this.totalCoursesPerPage;
-                //console.log('Going Back Start at ' + this.start + ' and end at ' + this.stop)
                 this.currentPage--;
             }else{
                 this.start = 0;
-                //console.log('Going Back Limit Start at ' + this.start + ' and end at ' + this.stop)
                 this.currentPage = 1;
             }
         }
